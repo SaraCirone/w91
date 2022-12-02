@@ -1,0 +1,23 @@
+<div class="container bg-primary text-center p-4">
+    <h1 class="text-white fw-bold">Primo esercizio con Angular</h1>
+    <h3 class="text-white">Guarda la console per il risultato dell'esercizio!</h3>
+</div>
+
+<div class="container mt-5">
+    <table class="table table-striped table-hover">
+        <thead class="border-bottom border-3 border-info bg-primary text-white">
+            <tr>
+                <th>Id</th>
+                <th>Title</th>
+                <th>Completed</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let user of todos">
+                <td>{{user.id}}</td>
+                <td>{{user.title}}</td>
+                <td>{{user.completed}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
